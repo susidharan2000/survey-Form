@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <!--  Add Bootstrap cdn  -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  
+    <!--  Add bootstrap icon Library  -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"></link>
+</head>
+<body>
+    <section class="intro">
+        <div class="mask d-flex align-items-center h-100 gradient-custom">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card">
+                  <div class="card-body p-4 p-md-5">
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
+                            <h6 class="poppins-light">Name<span class="star">*</span></h6>
+                          <div class="col">
+                            <div data-mdb-input-init class="form-outline w-75 ">
+                              <input type="text" id="form3Example1" class="form-control " />
+                              <label class="form-label" for="form3Example1">First</label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div data-mdb-input-init class="form-outline w-75">
+                              <input type="text" id="form3Example2" class="form-control" />
+                              <label class="form-label" for="form3Example2">Last</label>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Email input -->
+                        <h6 class="poppins-light">Email<span class="star">*</span></h6>
+                        <div data-mdb-input-init class="form-outline mb-4">
+                          <input type="email" id="form3Example3" class="form-control" />
+                        </div>
+
+                        <!-- Star rating --> 
+                        <h6 class="poppins-light">Your Experience<span class="star">*</span></h6>
+                        <!-- To display checked star rating icons -->  
+                        <span class = "fa fa-star checked"></span>  
+                        <span class = "fa fa-star checked"></span>  
+                        <span class = "fa fa-star checked"></span>  
+                        <span class = "fa fa-star checked"></span> 
+                        <span class = "fa fa-star checked"></span> 
+                        <p class="gap">Overall, how would you rate your Experience with us?</p>
+
+                        <h6 class="poppins-light">How satisfied are you with<span class="star">*</span></h6>
+                        <div id="cid_4" class="form-input-wide" data-layout="full">
+                            <table summary="" aria-labelledby="label_4" cellpadding="4" cellspacing="0" class="form-matrix-table" data-component="matrix">
+                              <tbody><tr class="form-matrix-tr form-matrix-header-tr">
+                                <th class="form-matrix-th" style="border:none">&nbsp;</th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_0 "><label id="label_4_col_0">Very unsatisfied</label></th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_1 "><label id="label_4_col_1">unSatisfied</label></th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_2 "><label id="label_4_col_2">Neutral</label></th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_3 "><label id="label_4_col_3">satisfied</label></th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_4 "><label id="label_4_col_4">Very satisfied</label></th>
+                              </tr>
+                              <tr class="form-matrix-tr form-matrix-value-tr high-light" aria-labelledby="label_4 label_4_row_0">
+                                <th scope="row" class="form-matrix-headers form-matrix-row-headers "><label id="label_4_row_0">Purchase</label></th>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_0" class="form-radio" name="q4_overallSatisfaction[0]" value="Very satisfied" aria-labelledby="label_4_col_0 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_1" class="form-radio" name="q4_overallSatisfaction[0]" value="Satisfied" aria-labelledby="label_4_col_1 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_2" class="form-radio" name="q4_overallSatisfaction[0]" value="Neutral" aria-labelledby="label_4_col_2 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_3" class="form-radio" name="q4_overallSatisfaction[0]" value="Unsatisfied" aria-labelledby="label_4_col_3 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_4" class="form-radio" name="q4_overallSatisfaction[0]" value="Very unsatisfied" aria-labelledby="label_4_col_4 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_4" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                              </tr>
+                              <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_4 label_4_row_1">
+                                <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label id="label_4_row_1">Company</label></th>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_0" class="form-radio" name="q4_overallSatisfaction[1]" value="Very satisfied" aria-labelledby="label_4_col_0 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_1" class="form-radio" name="q4_overallSatisfaction[1]" value="Satisfied" aria-labelledby="label_4_col_1 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_2" class="form-radio" name="q4_overallSatisfaction[1]" value="Neutral" aria-labelledby="label_4_col_2 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_3" class="form-radio" name="q4_overallSatisfaction[1]" value="Unsatisfied" aria-labelledby="label_4_col_3 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_4" class="form-radio" name="q4_overallSatisfaction[1]" value="Very unsatisfied" aria-labelledby="label_4_col_4 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_4" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                              </tr>
+                              <tr class="form-matrix-tr form-matrix-value-tr high-light" aria-labelledby="label_4 label_4_row_2">
+                                <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label id="label_4_row_2">Company Overall</label></th>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_2_0" class="form-radio" name="q4_overallSatisfaction[2]" value="Very satisfied" aria-labelledby="label_4_col_0 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_2_1" class="form-radio" name="q4_overallSatisfaction[2]" value="Satisfied" aria-labelledby="label_4_col_1 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_2_2" class="form-radio" name="q4_overallSatisfaction[2]" value="Neutral" aria-labelledby="label_4_col_2 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_2_3" class="form-radio" name="q4_overallSatisfaction[2]" value="Unsatisfied" aria-labelledby="label_4_col_3 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values "><input type="radio" id="input_4_2_4" class="form-radio" name="q4_overallSatisfaction[2]" value="Very unsatisfied" aria-labelledby="label_4_col_4 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_4" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                              </tr>
+                              
+                              
+                            </tbody></table>
+                          </div>
+                          <h6 class="poppins-light gap">How Likely are you to<span class="star">*</span></h6>
+                          <div id="cid_4" class="form-input-wide" data-layout="full">
+                            <table summary="" aria-labelledby="label_4" cellpadding="4" cellspacing="0" class="form-matrix-table" data-component="matrix">
+                              <tbody><tr class="form-matrix-tr form-matrix-header-tr">
+                                <th class="form-matrix-th" style="border:none">&nbsp;</th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_0 "><label id="label_4_col_0">Very Unlikely</label></th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_1 "><label id="label_4_col_1">Unlikely</label></th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_2 "><label id="label_4_col_2">Neutral</label></th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_3 "><label id="label_4_col_3">Likely</label></th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_4 "><label id="label_4_col_4">Very Likely</label></th>
+                              </tr>
+                              <tr class="form-matrix-tr form-matrix-value-tr high-light" aria-labelledby="label_4 label_4_row_0">
+                                <th scope="row" class="form-matrix-headers form-matrix-row-headers "><label id="label_4_row_0">Buy form Us again</label></th>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_0" class="form-radio" name="q4_overallSatisfaction[0]" value="Very satisfied" aria-labelledby="label_4_col_0 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_1" class="form-radio" name="q4_overallSatisfaction[0]" value="Satisfied" aria-labelledby="label_4_col_1 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_2" class="form-radio" name="q4_overallSatisfaction[0]" value="Neutral" aria-labelledby="label_4_col_2 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_3" class="form-radio" name="q4_overallSatisfaction[0]" value="Unsatisfied" aria-labelledby="label_4_col_3 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_0_4" class="form-radio" name="q4_overallSatisfaction[0]" value="Very unsatisfied" aria-labelledby="label_4_col_4 label_4_row_0" aria-label="Cells Radio Button"><label for="input_4_0_4" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                              </tr>
+                              <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_4 label_4_row_1">
+                                <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label id="label_4_row_1">Recommand our products to others</label></th>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_0" class="form-radio" name="q4_overallSatisfaction[1]" value="Very satisfied" aria-labelledby="label_4_col_0 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_1" class="form-radio" name="q4_overallSatisfaction[1]" value="Satisfied" aria-labelledby="label_4_col_1 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_2" class="form-radio" name="q4_overallSatisfaction[1]" value="Neutral" aria-labelledby="label_4_col_2 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_3" class="form-radio" name="q4_overallSatisfaction[1]" value="Unsatisfied" aria-labelledby="label_4_col_3 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_1_4" class="form-radio" name="q4_overallSatisfaction[1]" value="Very unsatisfied" aria-labelledby="label_4_col_4 label_4_row_1" aria-label="Cells Radio Button"><label for="input_4_1_4" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                              </tr>
+                              <tr class="form-matrix-tr form-matrix-value-tr high-light" aria-labelledby="label_4 label_4_row_2">
+                                <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label id="label_4_row_2">Recommand our Company to others</label></th>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_2_0" class="form-radio" name="q4_overallSatisfaction[2]" value="Very satisfied" aria-labelledby="label_4_col_0 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_2_1" class="form-radio" name="q4_overallSatisfaction[2]" value="Satisfied" aria-labelledby="label_4_col_1 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_2_2" class="form-radio" name="q4_overallSatisfaction[2]" value="Neutral" aria-labelledby="label_4_col_2 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values p-md-4"><input type="radio" id="input_4_2_3" class="form-radio" name="q4_overallSatisfaction[2]" value="Unsatisfied" aria-labelledby="label_4_col_3 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                                <td class="form-matrix-values "><input type="radio" id="input_4_2_4" class="form-radio" name="q4_overallSatisfaction[2]" value="Very unsatisfied" aria-labelledby="label_4_col_4 label_4_row_2" aria-label="Cells Radio Button"><label for="input_4_2_4" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label></td>
+                              </tr>
+                            </tbody></table>
+                          </div>
+                          <!-- Message input -->
+                          <h6 class="poppins-light gap">Additional Commants or suggestions</h6>
+                          <div class="mx-0 mx-sm-auto">
+                              <div class="modal-body">
+                                <form class="px-4" action="">
+                                  <div data-mdb-input-init class="form-outline mb-4">
+                                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                  </div>
+                                </form>
+                              </div>
+                          </div>
+                          <button type="button">Submit</button>
+                      </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
